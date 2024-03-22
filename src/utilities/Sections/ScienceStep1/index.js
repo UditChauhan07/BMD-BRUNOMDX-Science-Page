@@ -16,11 +16,12 @@ const Index = () => {
                 power of natural substances to improve human health and
                 longevity. This goal is a moving target. One not easily
                 achieved. Nature is not always willing to show us her hand.
-              </p>
-              <p>
+                <br></br>
+                <br></br>
                 Pharmacology is another path to improving human health, and
                 Bruno also does this.
               </p>
+             
             </div>
             <div>
                 <button className={styles.ReadMoreBtn}>Read More</button>
