@@ -9,7 +9,7 @@ const Index = () => {
           <div className={styles.RowFlex}>
             <div className={styles.W70}>
               <div className={styles.Mask}>
-                <h1>Understand the world.</h1>
+                <h1>Understand the world</h1>
               </div>
               <h3>Unlocking Nature’s Secrets</h3>
               <div className={styles.W80}>

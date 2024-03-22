@@ -16,12 +16,13 @@ const Index = () => {
                 conglomerates. The names of these companies are familiar and,
                 unfortunately, are often known for being as impersonal as they
                 are innovative.
-              </p>
-              <p>
+                <br></br>
+                <br></br>
                 Bruno MD, an Italian company based in Rome, is a family-owned
                 operation that allows the company to innovate from a different
                 perspective.
               </p>
+             
             </div>
             <div>
               <button className={styles.ReadMoreBtn}>Read More</button>
