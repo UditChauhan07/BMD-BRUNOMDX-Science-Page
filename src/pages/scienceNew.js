@@ -37,13 +37,16 @@ const ScienceNew = ({ version }) => {
             <MasterHeadImg data={masterHead} />
           )}
           <section id="section03" className={Styles.demo}>
-            <div  className={Styles.arrowcontrol}>
-              <div  className={Styles.arrowBox}></div>
-            </div>
+            <a href="#section04">
+              <div className={Styles.arrowcontrol}>
+                <div className={Styles.arrowBox}></div>
+              </div>
+            </a>
           </section>
         </div>
 
-        <div className={Styles.ScrollArea}
+        <div id="section04"
+          className={Styles.ScrollArea}
           // onMouseMove={handleMouseMove}
           // style={{
           //   backgroundPosition: `${backgroundPosition.x}px ${backgroundPosition.y}px`,
