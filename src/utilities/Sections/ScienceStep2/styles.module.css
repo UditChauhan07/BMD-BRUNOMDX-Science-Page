@@ -86,7 +86,7 @@ ul.fireflies {
 }
 
 .fireflies li { 
-    border-radius: 50%; 
+    border-radius: 30%; 
     background-color: rgb(255, 255, 73); 
     background-image: radial-gradient(rgb(249, 206, 36) 5%, 
                                       rgb(254, 179, 4) 25%, 
