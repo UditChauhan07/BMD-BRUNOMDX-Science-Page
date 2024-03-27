@@ -4,7 +4,12 @@ import styles from "./styles.module.css";
 const Index = () => {
   return (
     <div>
-      <div className={styles.height100vh}>
+      <div className={`${styles.height100vh} ${styles.bg} `}>
+        <div className={styles.starField}>
+          <div className={styles.layer}></div>
+          <div className={styles.layer}></div>
+          <div className={styles.layer}></div>
+        </div>
         <div className={styles.container}>
           <div className={styles.RowFlex}>
             <div className={styles.W70}>

@@ -1,9 +1,9 @@
-.height100vh{
-    /* height: 100vh;
-    background-color: gray;    
-    background-image: url("/images/Science-page-Step-1.png");
+.height100vh{  
+       
+    background-image: url("/images/science-doctr-man.png");
     background-size: cover;
-    background-repeat: no-repeat; */
+    background-repeat: no-repeat;
+    width: 100%;
    
 }
 .container{
