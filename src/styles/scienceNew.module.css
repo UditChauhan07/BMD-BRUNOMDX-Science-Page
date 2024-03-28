@@ -108,6 +108,7 @@
   box-sizing: border-box;
   background-color:#000000a8;
   transition: 0.5s;
+  cursor: pointer;
 
 }
 
