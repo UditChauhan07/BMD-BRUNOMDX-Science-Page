@@ -25,6 +25,13 @@
   display: none !important;
 }
 
+
+#ScrollRight {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+
 /* :root {
   --max-width: 1100px;
   --border-radius: 12px;
@@ -493,10 +500,10 @@ https://flickity.metafizzy.co
 
 #ScrollRight::-webkit-scrollbar {
   background-color: #f5f5f5;
-  width: 4px;
+  width: 1px;
 }
 #ScrollRight::-webkit-scrollbar-thumb {
-background-color: #434c4f;
+background-color: #bdbdbd;
 border-radius: 10px;
 -webkit-box-shadow: inset 0 0 6px #0000004d;
 }
