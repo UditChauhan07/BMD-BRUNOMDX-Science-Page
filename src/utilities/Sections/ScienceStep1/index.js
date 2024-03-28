@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "./styles.module.css";
+import { Link } from 'react-scroll';
 
 const Index = () => {
   const [backgroundPosition, setBackgroundPosition] = useState({ x: 0, y: 0 });
@@ -63,6 +64,13 @@ const Index = () => {
           <span  onClick={toggleVisibility}>X</span>
           </div>
           )}
+
+<Link activeClass="active" to="section05" spy={true} smooth={true}
+                            duration={500}>
+              <div className={styles.arrowcontrol}>
+                <div className={styles.arrowBox}></div>
+              </div>
+              </Link>
     </div>
       </div>
       

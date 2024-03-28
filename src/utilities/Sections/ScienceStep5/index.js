@@ -1,9 +1,10 @@
 import React from "react";
 import styles from "./styles.module.css";
+import { Link } from 'react-scroll';
 
 const Index = () => {
   return (
-    <div className={styles.height100vh}>
+    <div id="section08" className={styles.height100vh}>
       <div className={styles.container}>
         <div className={styles.RowFlex}>
           <div className={styles.W70}>
@@ -24,7 +25,15 @@ const Index = () => {
             </div>
           </div>
         </div>
+        {/* <Link activeClass="active" to="section04" spy={true} smooth={true}
+                            duration={500}
+            >
+              <div className={styles.arrowcontrol}>
+                <div className={styles.arrowBox}></div>
+              </div>
+              </Link> */}
       </div>
+
     </div>
   );
 };

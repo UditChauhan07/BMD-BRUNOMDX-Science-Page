@@ -10,7 +10,8 @@
     margin-left: auto;
     margin-right: auto;
     max-width: 1380px;
-    width: 100%;   
+    width: 100%; 
+    padding: 10px 20px;  
 }
 .RowFlex{
     display: flex;  
@@ -272,28 +273,129 @@ ul.fireflies {
   
     0%, 
     100% { 
-        box-shadow: 0 0 5px 2px rgb(250, 193, 93),  
-                    0 0 10px 5px rgb(255, 242, 63), 
-                    0 0 30px 10px rgb(255, 219, 41); 
-        height: 0; 
+        box-shadow: 0 0 5px 0px rgb(250, 193, 93), 0 0 0px 1px rgb(255, 242, 63), 0 0 20px 5px rgb(255, 219, 41);
+        height: 0;
         width: 0; 
     } 
   
-    50% { 
+     /* 50% { 
         box-shadow: 0 0 5px 2px rgb(250, 193, 93),  
                     0 0 20px 10px rgb(255, 228, 140), 
                     0 0 40px 15px rgb(255, 219, 41); 
-    } 
-  
-    75% { 
+    } */
+
+    /* 75% { 
         box-shadow: 0 0 0px 0px rgb(250, 193, 93),  
                     0 0 0px 0px rgb(255, 228, 140), 
                     0 0 0px 0px rgb(255, 219, 41); 
-    } 
+    }  */
 }
   
   /* step2 end */
   
+
+
+  
+  .arrowBox{
+    /* background-color: #fff; */
+    margin: -20px 0 0 0;
+    
+  
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    -webkit-animation: sdb03 3s infinite;
+    animation: sdb03 3s infinite;
+    }
+  
+  
+   
+  
+  .arrowBox {
+    position: absolute;
+    /* top: 0; */
+    bottom: 45px;
+    left: 49%;
+    width: 50px;
+    height: 50px; 
+    border: 2px solid #ffffff;
+    border-radius: 100%;
+    box-sizing: border-box;
+    background-color:#000000a8;
+    transition: 0.5s;
+  
+  }
+  
+  .arrowBox::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: '';
+    width: 16px;
+    height: 16px;
+    margin: -12px 0 0 -8px;
+    border-left: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    box-sizing: border-box;
+  }
+  .arrowBox::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    content: '';
+    width: 44px;
+    height: 44px;
+    box-shadow: 0 0 0 0 rgba(255,255,255,.1);
+    border-radius: 100%;
+    opacity: 0;
+    -webkit-animation: sdb03 3s infinite;
+    animation: sdb03 10s infinite;
+    box-sizing: border-box;
+  }
+  @-webkit-keyframes sdb03 {
+    0% {
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    60% {
+      box-shadow: 0 0 0 30px rgba(255,255,255,.1);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes sdb03 {
+    0% {
+      /* opacity: 0; */
+    }
+    30% {
+      /* opacity: 1; */
+    }
+    60% {
+      box-shadow: 0 0 0 30px rgba(255,255,255,.1);
+      /* opacity: 0; */
+    }
+    100% {
+      /* opacity: 0; */
+    }
+  }
+  
+  
+  
+  .arrowcontrol {
+    
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+    place-content:  center;
+  
+  }
 
 
 @media  (max-width: 1599.98px)
@@ -339,7 +441,13 @@ ul.fireflies {
 
 }
 @media  (max-width: 768px)
+
 {
+
+    .arrowcontrol{
+        display: none;
+      }
+
     .container {
              max-width: 650px;
        
@@ -347,6 +455,7 @@ ul.fireflies {
     .W70 {
         
         width: 100%;
+        margin: 0 0 120px 0;
         
     }
     .RowFlex h1 {

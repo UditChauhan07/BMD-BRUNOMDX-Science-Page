@@ -1,6 +1,6 @@
 .ScrollContainer,
 .ScrollArea {
-  height: 95vh;
+  /* height: 95vh; */
 }
 
 .ScrollContainer {
@@ -28,7 +28,7 @@
 
 
 .ScrollArea:nth-of-type(1) {
-  height: 90vh;
+  /* height: 90vh; */
   background-color: rgb(245 245 245);
   background-size: cover;
   background-repeat: no-repeat;
@@ -51,7 +51,7 @@
   background-image: url("/images/Science-page-Step-2.png");
   background-size: cover;
   background-repeat: no-repeat;
-  z-index: -1;
+  /* z-index: -1; */
   position: relative;
 }
 
@@ -84,7 +84,7 @@
 
 .arrowBox{
   /* background-color: #fff; */
-  margin: -20px 0 0 0;
+  margin: 0px 0 0 0;
   
 
   display: flex;
@@ -187,12 +187,20 @@
 
 
 @media screen and (max-width: 768px) {
+  .arrowcontrol{
+    display: none;
+  }
+
   .ScrollContainer,
   .ScrollArea {
-    height: unset;
+    height: 100vh;
   }
+
+
+  
   .ScrollArea:nth-of-type(1) {
-    height: unset;
+  
+    /* position: unset; */
   }
 
   .ScrollArea:nth-of-type(2) {   

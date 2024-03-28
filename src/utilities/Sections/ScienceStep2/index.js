@@ -1,15 +1,21 @@
 import React from "react";
 import styles from "./styles.module.css";
+import { Link } from 'react-scroll';
 
 const Index = () => {
   return (
     <div>
-      <div className={`${styles.height100vh} ${styles.bg} `}>
+      <div id="section05" className={`${styles.height100vh} ${styles.bg} `}>
         
         <div className={styles.container}>
           <div className={styles.RowFlex}>
           <div className={styles.W70}>
-    {/* <ul className={styles.fireflies}> 
+    <ul className={styles.fireflies}> 
+        <li></li> 
+        <li></li> 
+        <li></li> 
+        <li></li> 
+    
         <li></li> 
         <li></li> 
         <li></li> 
@@ -21,16 +27,7 @@ const Index = () => {
         <li></li> 
         <li></li> 
         <li></li> 
-        <li></li> 
-        <li></li> 
-        <li></li> 
-        <li></li> 
-        <li></li> 
-        <li></li> 
-        <li></li> 
-        <li></li> 
-        <li></li> 
-    </ul> */}
+    </ul>
               <div className={styles.Mask}>
                 <h1>Understand the world</h1>
               </div>
@@ -48,8 +45,16 @@ const Index = () => {
               </div>
             </div>
           </div>
+      <Link activeClass="active" to="section06" spy={true} smooth={true}
+                            duration={500}>
+              <div className={styles.arrowcontrol}>
+                <div className={styles.arrowBox}></div>
+              </div>
+            
+              </Link>
         </div>
       </div>
+
     </div>
   );
 };

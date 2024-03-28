@@ -10,6 +10,7 @@
   margin-right: auto;
   max-width: 1380px;
   width: 100%;
+  padding: 10px 20px;
 }
 .RowFlex {
   display: flex;
@@ -87,6 +88,8 @@
   margin: 15px 0px;
 }
 
+
+
 @media (max-width: 1599.98px) {
   .container {
     margin-left: auto;
@@ -128,10 +131,29 @@
     width: 100%;
     background-color: #b7c18469;
     border-radius: 10px;
+    margin: 0 0 80px 0;
   }
   .W80 p {
     display: block;
   }
+  .RowFlex h1 {
+    font-size: 50px;
+  }
+  .RowFlex h2 {
+    font-size: 40px;
+    bottom: 15px;
+    line-height: 40px;
+}
+.W80 {
+  width: 90%;
+
+}
+.RowFlex h3 {
+  font-size: 20px;
+  line-height: 20px;
+  margin-top: 20px;
+}
+
 }
 @media (max-width: 575px) {
   .container {

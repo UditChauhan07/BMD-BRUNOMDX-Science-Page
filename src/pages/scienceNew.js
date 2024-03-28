@@ -10,6 +10,7 @@ import ScienceStep3 from "@/utilities/Sections/ScienceStep3";
 import ScienceStep4 from "@/utilities/Sections/ScienceStep4";
 import ScienceStep5 from "@/utilities/Sections/ScienceStep5";
 import Styles from "../styles/scienceNew.module.css";
+import { Link } from 'react-scroll';
 const ScienceNew = ({ version }) => {
   const { masterHead, Step01, Step02, Step03, Step04, Step05 } =
     scienza[version] || {};
@@ -37,26 +38,32 @@ const ScienceNew = ({ version }) => {
             <MasterHeadImg data={masterHead} />
           )}
           <section id="section03" className={Styles.demo}>
-            <a href="#section04">
+          <Link activeClass="active" to="section04" spy={true} smooth={true}
+                            duration={500}
+            >
               <div className={Styles.arrowcontrol}>
                 <div className={Styles.arrowBox}></div>
               </div>
-            </a>
-          </section>
+              </Link>
+                     </section>
         </div>
 
         <div id="section04"
           className={Styles.ScrollArea}
+          
           // onMouseMove={handleMouseMove}
           // style={{
           //   backgroundPosition: `${backgroundPosition.x}px ${backgroundPosition.y}px`,
           // }}
         >
+
+
           <ScienceStep1 data={Step01} />
         </div>
 
         <div className={Styles.ScrollArea}>
           <ScienceStep2 data={Step02} />
+          
         </div>
         <div className={Styles.ScrollArea}>
           <ScienceStep3 data={Step03} />
