@@ -205,6 +205,11 @@ font-weight: 900;
         -webkit-line-clamp: 3;
         overflow: hidden; 
     }
+    .hiddenParagraph p{
+        color: #000;
+        font-family: var(--bmd-font-Secondary);
+        font-size: 14px;
+    }
 
 }
 

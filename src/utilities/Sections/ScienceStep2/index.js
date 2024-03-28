@@ -9,7 +9,7 @@ const Index = () => {
         <div className={styles.container}>
           <div className={styles.RowFlex}>
           <div className={styles.W70}>
-    {/* <ul className={styles.fireflies}> 
+    <ul className={styles.fireflies}> 
         <li></li> 
         <li></li> 
         <li></li> 
@@ -24,13 +24,13 @@ const Index = () => {
         <li></li> 
         <li></li> 
         <li></li> 
+        {/* <li></li> 
         <li></li> 
         <li></li> 
         <li></li> 
         <li></li> 
-        <li></li> 
-        <li></li> 
-    </ul> */}
+        <li></li>  */}
+    </ul>
               <div className={styles.Mask}>
                 <h1>Understand the world</h1>
               </div>

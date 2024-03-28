@@ -42,6 +42,7 @@ const Index = () => {
               <button onClick={toggleVisibility} className={styles.ReadMoreBtn}>
                 Read More
               </button>
+              
             </div>
           </div>
         </div>
